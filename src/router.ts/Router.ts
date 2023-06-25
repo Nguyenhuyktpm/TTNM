@@ -1,5 +1,7 @@
-import express from "express";
+import express,{Request,Response} from "express";
 
 export const Router = express.Router();
 
-Router.get("/",)
+Router.get("/", async (req: Request, res: Response)=>{
+    res.render("index")
+})
